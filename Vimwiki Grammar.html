@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Vimwiki Grammar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<h1 id="toc_1">Vimwiki Grammar</h1>
+
+<p>
+<a href="Papapa with VIM.html">返回</a>
+</p>
+
+<p>
+Rerfer to <a href="http://wiki.tinyxd.me/vimwiki.html">tinyxd</a> and
+<a href="http://wiki.ktmud.com/tips/vim/vimwiki-guide.html">ktmud</a>.
+</p>
+
+<ul>
+<li>
+文本字形
+
+<ul>
+<li>
+<code>*粗体*</code>: <strong>粗体</strong>
+
+<li>
+<code>_斜体_</code>: <em>斜体</em>
+
+<li>
+<code>~~删除线~~</code>: <del>删除线</del>
+
+<li>
+<code>代码（无语法）</code>: <code>无语法代码</code>
+
+<li>
+<code>上标^脚本^</code>: 上标<sup><small>脚本</small></sup>
+
+<li>
+<code>下标,,脚本,,</code>: 下标<sub><small>脚本</small></sub>
+
+</ul>
+<li>
+链接
+
+<ul>
+<li>
+<code>[[链接]]</code>: <a href="链接.html">链接</a>
+
+<li>
+<code>[[链接|链接描述]]</code>: <a href="链接.html">链接描述</a>
+
+<li>
+纯链接: <a href="http://xcoder.in/">http://xcoder.in/</a>
+
+</ul>
+<li>
+标题
+
+<ul>
+<li>
+<code>= 一级标题 =</code>
+
+<li>
+<code>== 二级标题 ==</code>
+
+</ul>
+<li>
+段落
+
+<ul>
+<li>
+段落间以一个空行分割
+
+</ul>
+<li>
+列表
+<pre>
+  * 符号列表1
+  * 符号列表2
+  * 符号列表3
+    * 符号列表
+    * 符号列表
+      - 符号列表
+      - 符号列表
+        # 符号列表
+        # 符号列表
+          列表第一行
+          列表第二行
+        # 符号列表
+</pre>
+
+<li>
+表格
+<pre>
+  | 年    | 最低温度   | 最高温度   |
+  | ----- | ---------- | ---------- |
+  | 2001  | 10         | 20         |
+  | 2002  | 20         | 30         |
+</pre>
+
+<li>
+块级引用
+  三对大括号中间的就是块级引用了。
+
+<li>
+特殊占位符
+
+<ul>
+<li>
+<code>%toc</code>: 大纲
+
+<li>
+<code>%title</code>: 制定 HTML 文档的 title，建议放到文档最末尾，若不指定，title 就是
+  文件名。
+
+<li>
+<code>%nohtml</code>: 告诉 Vimwiki 不为某条目生成 HTML 文件。
+
+</ul>
+</ul>
+
+</body>
+</html>
